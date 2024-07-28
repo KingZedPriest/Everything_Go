@@ -15,7 +15,7 @@ func main() {
 	if err != nil {
 		fmt.Printf(err.Error())
 	}
-	fmt.Printf("THis is the result %v", result)
+	fmt.Printf("This is the result %v", result)
 }
 
 func intDiv(no1, no2 int) (int, error) {
@@ -27,3 +27,8 @@ func intDiv(no1, no2 int) (int, error) {
 	}
 	return result, err
 }
+
+// This creates an array of 3, of the value type of int32,
+// and has a default value of [0, 0, 0]
+
+var arr = [3]int32{10, 20, 30}
