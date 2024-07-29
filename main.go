@@ -46,11 +46,16 @@ func dealingArr() {
 
 	myMap = map[string]uint8{"helen": 23, "paul": 44}
 
-	var name, ok = myMap["json"]
+	// var name, ok = myMap["json"]
 
-	if ok {
-		fmt.Printf("\n This is the value of json %v", name)
-	} else {
-		fmt.Printf("\n There is nothing like json in the map")
+	// if ok {
+	// 	fmt.Printf("\n This is the value of json %v", name)
+	// } else {
+	// 	fmt.Printf("\n There is nothing like json in the map")
+	// }
+
+	// Looping over
+	for name := range myMap {
+		fmt.Printf("\n Name: %v", name)
 	}
 }
