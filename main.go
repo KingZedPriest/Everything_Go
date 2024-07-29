@@ -3,6 +3,7 @@ package main
 import (
 	"errors"
 	"fmt"
+	"strings"
 	//"math/rand"
 )
 
@@ -59,7 +60,21 @@ func dealingArr() {
 		fmt.Printf("\n Name: %v", name)
 	}
 
-	for i := 0; i < 10; i++ {
-		fmt.Printf("\n i %v", i)
+	// for i := 0; i < 10; i++ {
+	// 	fmt.Printf("\n i %v", i)
+	// }
+
+	var names = []string{"c", "h", "a", "r", "l", "e", "s"}
+
+	//Create a string builder variable
+	var stringBuilder strings.Builder
+
+	//Loop through the string
+	for i := range names {
+		stringBuilder.WriteString(names[i])
 	}
+
+	//Create a new variable for that string
+	var lastStr = stringBuilder.String()
+	fmt.Printf("\n %v", lastStr)
 }
