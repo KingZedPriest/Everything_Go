@@ -39,6 +39,18 @@ func dealingArr() {
 	// arr = append(arr, arr2...)
 	// fmt.Printf("\n The length of the array is length %v, and capacity %v", len(arr), cap(arr))
 
-	var arr1 []int32 = make([]int32, 3, 10)
-	fmt.Printf("\n This is the length of the new array %v and the capacity %v", len(arr1), cap(arr1))
+	// var arr1 []int32 = make([]int32, 3, 10)
+	// fmt.Printf("\n This is the length of the new array %v and the capacity %v", len(arr1), cap(arr1))
+
+	var myMap map[string]uint8 = make(map[string]uint8)
+
+	myMap = map[string]uint8{"helen": 23, "paul": 44}
+
+	var name, ok = myMap["json"]
+
+	if ok {
+		fmt.Printf("\n This is the value of json %v", name)
+	} else {
+		fmt.Printf("\n There is nothing like json in the map")
+	}
 }
