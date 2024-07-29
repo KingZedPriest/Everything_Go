@@ -9,14 +9,14 @@ import (
 // Create a new function, the entry point
 func main() {
 	//fmt.Println("Hello World. \n", rand.Intn(200))
-	newVar := "text"
-	fmt.Println(newVar)
-	result, err := intDiv(-5, 5)
-	if err != nil {
-		fmt.Printf(err.Error())
-	} else {
-		fmt.Printf("This is the result %v", result)
-	}
+	//newVar := "text"
+	//fmt.Println(newVar)
+	//result, err := intDiv(-5, 5)
+	// if err != nil {
+	// 	fmt.Printf(err.Error())
+	// } else {
+	// 	fmt.Printf("This is the result %v", result)
+	// }
 	dealingArr()
 }
 
@@ -34,8 +34,11 @@ func intDiv(no1, no2 int) (int, error) {
 // and has a default value of [0, 0, 0]
 
 func dealingArr() {
-	var arr []int32 = []int32{10, 20, 30}
-	var arr2 []int32 = []int32{4, 5}
-	arr = append(arr, arr2...)
-	fmt.Printf("\n The length of the array is length %v, and capacity %v", len(arr), cap(arr))
+	// var arr []int32 = []int32{10, 20, 30}
+	// var arr2 []int32 = []int32{4, 5}
+	// arr = append(arr, arr2...)
+	// fmt.Printf("\n The length of the array is length %v, and capacity %v", len(arr), cap(arr))
+
+	var arr1 []int32 = make([]int32, 3, 10)
+	fmt.Printf("\n This is the length of the new array %v and the capacity %v", len(arr1), cap(arr1))
 }
