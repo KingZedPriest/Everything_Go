@@ -58,4 +58,8 @@ func dealingArr() {
 	for name := range myMap {
 		fmt.Printf("\n Name: %v", name)
 	}
+
+	for i := 0; i < 10; i++ {
+		fmt.Printf("\n i %v", i)
+	}
 }
