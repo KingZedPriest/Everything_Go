@@ -3,19 +3,21 @@ package main
 import (
 	"errors"
 	"fmt"
-	"math/rand"
+	//"math/rand"
 )
 
 // Create a new function, the entry point
 func main() {
-	fmt.Println("Hello World. \n", rand.Intn(200))
+	//fmt.Println("Hello World. \n", rand.Intn(200))
 	newVar := "text"
 	fmt.Println(newVar)
-	result, err := intDiv(2, 5)
+	result, err := intDiv(-5, 5)
 	if err != nil {
 		fmt.Printf(err.Error())
+	} else {
+		fmt.Printf("This is the result %v", result)
 	}
-	fmt.Printf("This is the result %v", result)
+	dealingArr()
 }
 
 func intDiv(no1, no2 int) (int, error) {
@@ -35,4 +37,5 @@ func dealingArr() {
 	var arr []int32 = []int32{10, 20, 30}
 	var arr2 []int32 = []int32{4, 5}
 	arr = append(arr, arr2...)
+	fmt.Printf("\n The length of the array is length %v, and capacity %v", len(arr), cap(arr))
 }
