@@ -31,4 +31,8 @@ func intDiv(no1, no2 int) (int, error) {
 // This creates an array of 3, of the value type of int32,
 // and has a default value of [0, 0, 0]
 
-var arr = [3]int32{10, 20, 30}
+func dealingArr() {
+	var arr []int32 = []int32{10, 20, 30}
+	var arr2 []int32 = []int32{4, 5}
+	arr = append(arr, arr2...)
+}
